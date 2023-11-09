@@ -68,17 +68,15 @@ class FindUserID extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (validateInput()) {
+                    String name = nameText.getText();
+                    String birth = birthText.getText();
+                    String phoneNumber = phoneNumberText.getText();
+                    System.out.println(name + " " + birth + " " + phoneNumber);
                     UserDTO userDTO = new UserDTO();
-                    userDTO.setName(nameText.getText());
-                    userDTO.setBirth(birthText.getText());
-                    userDTO.setPhoneNum(phoneNumberText.getText());
-                    if (userDAO.findID(userDTO)) {
-                        String userId = userDTO.getUserId(); // 아이디 찾기 성공
-                        System.out.println(userId);
-                    } else {
-                        // 데이터가 존재하지 않음.
-                        System.out.println("데이터가 존재하지 않습니다.");
-                    }
+                    userDTO.setName(name);
+                    userDTO.setBirth(birth);
+                    userDTO.setPhoneNum(phoneNumber);
+                    System.out.println(userDAO.findID(userDTO));
                 }
             }
         });

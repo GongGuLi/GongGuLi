@@ -13,16 +13,16 @@ public class MainPage extends JFrame{
     BoardDAO boardDAO = new BoardDAO();
     FrontSetting fs = new FrontSetting();
 
-    public MainPage() {  // 생성자
-        setListFrame();
-        setLeftPanel();
-        setCenterPanel();
-        setRightPanel();
+    String region;
+    String category;
 
-        setVisible(true);
-    }
+    JTable postTable;
+    JScrollPane listScrollPane;
+
     public MainPage(UserDTO userDTO) {  // 생성자
         this.userDTO = userDTO;
+        this.region = " --";
+        this.category = " --";
         setListFrame();
         setLeftPanel();
         setCenterPanel();
@@ -87,6 +87,23 @@ public class MainPage extends JFrame{
         categoryBtn.setBounds(70, 300, 170, 35);
         categoryBtn.setFont(fs.f18);
 
+        regionBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                region = (String) regionBtn.getSelectedItem();
+                category = (String) categoryBtn.getSelectedItem();
+                boardDAO.printBoard(region, category);
+            }
+        });
+        categoryBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                region = (String) regionBtn.getSelectedItem();
+                category = (String) categoryBtn.getSelectedItem();
+                boardDAO.printBoard(region, category);
+            }
+        });
+
         add(leftPanel);
         leftPanel.add(logoImg);
         leftPanel.add(profileBtn);
@@ -111,7 +128,7 @@ public class MainPage extends JFrame{
         searchBtn.setBorder(null);
         searchBtn.setBounds(702, 40, 30, 30 );
 
-        String searchFilter[] = {"지역", "카테고리", "제목", "작성자"};
+        String searchFilter[] =  {"제목", "작성자"};
         JComboBox searchFilterBox = new JComboBox(searchFilter);
         searchFilterBox.setBounds(460, 40, 80, 30);
 
@@ -123,11 +140,10 @@ public class MainPage extends JFrame{
                 System.out.println(searchField.getText());
             }
         });
-
         // 게시글 출력
-        JTable postTable = new JTable(boardDAO.selectAll(), fs.mainPageHeader) {  // 셀 내용 수정 불가 설정
+        postTable = new JTable(boardDAO.printBoard(region, category), fs.mainPageHeader) {
             @Override
-            public boolean isCellEditable(int row, int column) {
+            public boolean isCellEditable(int row, int column) {  // 셀 내용 수정 불가 설정
                 return false;
             }
         };
@@ -152,7 +168,7 @@ public class MainPage extends JFrame{
         listScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         listScrollPane.setBounds(50, 110, 680, 470);
 
-        RoundedButton newPostBtn = new RoundedButton("새 글");  // 새 글 작성 버튼
+        RoundedButtonR newPostBtn = new RoundedButtonR("새 글");  // 새 글 작성 버튼
         newPostBtn.setBounds(638, 600, 90, 40);
         newPostBtn.setFont(fs.f16);
 
@@ -198,7 +214,7 @@ public class MainPage extends JFrame{
         String listDB[][] = {{"", "", "", ""}};  // 차후 DB 연동
         JTable listTable = new JTable(listDB, listHeader);
 
-        JScrollPane listScrollPane = new JScrollPane(listTable);
+        listScrollPane = new JScrollPane(listTable);
         listScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         listScrollPane.setBounds(30, 80, 340, 430);
 

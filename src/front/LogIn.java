@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class LogIn extends JFrame {
+    FrontSetting fs = new FrontSetting();
 
     private Color c1 = new Color(255, 240, 227);
     private Color c3 = new Color(255, 255, 255);
@@ -30,6 +31,7 @@ public class LogIn extends JFrame {
         setTitle("로그인");
         setSize(1120, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        fs.FrameSetting(this);
     }
 
     private void setLeftPanel() {
@@ -128,7 +130,10 @@ public class LogIn extends JFrame {
                     System.out.println("비밀번호: " + new String(password));
 
                     switch (userDAO.logInCheck(id, new String(password))) {
-                        case 1 -> userDAO.logIn(id);
+                        case 1 -> {
+                            userDAO.logIn(id);
+                            dispose();
+                        }
                         case 0 -> System.out.println("비밀번호 불일치.");
                         case -1 -> System.out.println("아이디가 존재하지 않음");
                         case -2 -> System.out.println("DB 오류 발생");
