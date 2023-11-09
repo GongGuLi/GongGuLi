@@ -1,0 +1,14 @@
+
+l
+java:S1192-"JDefine a constant instead of duplicating this literal "KICKNAME:" 3 times.(ÏÚ×¸ıÿÿÿÿ8³ñÖò¸1
+L
+java:S1066("/Merge this if statement with the enclosing one.(¾Ş§—8µñÖò¸1
+†
+java:S1319"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(¶…×œúÿÿÿÿ8·ñÖò¸1
+r	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Šÿ¶úÿÿÿÿ8·ñÖò¸1
+>
+java:S1643d"Use a StringBuilder instead.(À™›üıÿÿÿÿ8¸ñÖò¸1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(“–ış8ÛôÖò¸1
+E
+java:S1172U"(Remove this unused method parameter "b".(úÕ Ò8öôÖò¸1

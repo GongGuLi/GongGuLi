@@ -1,0 +1,51 @@
+
+h
+java:S1192¾"JDefine a constant instead of duplicating this literal "KICKNAME:" 4 times.(¨œˆ·8¦Ó’–»1
+f
+java:S1192"HDefine a constant instead of duplicating this literal "Confirm" 3 times.(Óíîä8¦Ó’–»1
+i
+java:S1192Ì"KDefine a constant instead of duplicating this literal "USERCOUNT:" 3 times.(ÏîÉã8¦Ó’–»1
+f
+java:S1192Ø"HDefine a constant instead of duplicating this literal "MASTER:" 3 times.(ßôˆº8¦Ó’–»1
+m
+java:S1192Î"JDefine a constant instead of duplicating this literal "USERNAME:" 3 times.(¡¤ÑÂøÿÿÿÿ8¦Ó’–»1
+s	java:S117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Ë‚ÿÿÿÿÿ8§Ó’–»1
+s	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âç¦¨ÿÿÿÿÿ8§Ó’–»1
+J
+java:S1604B"(Make this anonymous inner class a lambda(øÅ„Âøÿÿÿÿ8¨Ó’–»1
+J
+java:S1604M"(Make this anonymous inner class a lambda(²‹Ïåÿÿÿÿÿ8¨Ó’–»1
+E
+java:S1604g"(Make this anonymous inner class a lambda(‡‘ÎÔ8¨Ó’–»1
+F
+java:S1604Š"(Make this anonymous inner class a lambda(Úã„‡8¨Ó’–»1
+:
+java:S1643İ"Use a StringBuilder instead.(É»À‡8©Ó’–»1
+‚
+java:S1450"`Remove the "chattingListPanel" field and declare it as a local variable in the relevant methods.(££¤ÿÿÿÿÿ8ÆÔ’–»1
+…
+java:S1450 "cRemove the "participantListModel" field and declare it as a local variable in the relevant methods.(Ê¦ğ÷úÿÿÿÿ8ÇÔ’–»1
+‚
+java:S1450"`Remove the "participantsFrame" field and declare it as a local variable in the relevant methods.(’Í”¿ÿÿÿÿÿ8ÇÔ’–»1
+‚
+java:S1450!"eRemove the "participantsscrollPane" field and declare it as a local variable in the relevant methods.(ê˜İà8ÇÔ’–»1
+{
+java:S1450"YRemove the "scrollPane" field and declare it as a local variable in the relevant methods.(ûÂ«Ÿşÿÿÿÿ8ÇÔ’–»1
+u
+java:S1450"SRemove the "text" field and declare it as a local variable in the relevant methods.(îÔÌœùÿÿÿÿ8ÇÔ’–»1
+F
+java:S1948"$Make "in" transient or serializable.(ĞĞàäùÿÿÿÿ8ÈÔ’–»1
+G
+java:S1948"%Make "out" transient or serializable.(Ë¡¸úÿÿÿÿ8ÈÔ’–»1
+J
+java:S1948"(Make "socket" transient or serializable.(„±›Ôúÿÿÿÿ8ÈÔ’–»1
+k
+java:S32525"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ÌÔ’–»1
+b
+java:S3252K"@Use static access with "javax.swing.SwingConstants" for "RIGHT".(Ì¬‰¶ûÿÿÿÿ8ĞÔ’–»1
+k
+java:S3252_"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(–“÷‹üÿÿÿÿ8ÓÔ’–»1
+o
+java:S3776{"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ü®À…8ÖÔ’–»1
+p
+java:S3776Ä"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(“–ış8ãÔ’–»1
