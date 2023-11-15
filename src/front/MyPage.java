@@ -1,5 +1,6 @@
 package front;
 
+import back.dao.BoardDAO;
 import back.dao.UserDAO;
 import back.UserDTO;
 
@@ -13,6 +14,7 @@ import java.awt.event.MouseEvent;
 public class MyPage extends JFrame {
     UserDTO userDTO = null;
     UserDAO userDAO = new UserDAO();
+    BoardDAO boardDAO = new BoardDAO();
     FrontSetting fs = new FrontSetting();
 
     boolean checkNickDup = false;
@@ -160,7 +162,7 @@ public class MyPage extends JFrame {
         myPostingPanel.setBounds(30, 120, 340, 500);
         myPostingPanel.setBackground(Color.WHITE);
 
-        JTable myPostingTable = new JTable(fs.myPageDB, fs.myPageHeader) { // 셀 내용 수정 불가
+        JTable myPostingTable = new JTable(boardDAO.printMyBoard(userDTO), fs.myPageHeader) { // 셀 내용 수정 불가
             @Override
             public boolean isCellEditable(int row, int column) {
                 return false;
@@ -198,7 +200,7 @@ public class MyPage extends JFrame {
         myHistoryPanel.setBounds(400, 120, 340, 480);
         myHistoryPanel.setBackground(Color.WHITE);
 
-        JTable myHistoryTable = new JTable(fs.mainPageDB, fs.mainPageHeader) { // 셀 내용 수정 불가
+        JTable myHistoryTable = new JTable(boardDAO.printMyHistoryBoard(userDTO), fs.mainPageHeader) { // 셀 내용 수정 불가
             @Override
             public boolean isCellEditable(int row, int column) {
                 return false;

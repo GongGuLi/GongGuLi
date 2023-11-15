@@ -40,12 +40,14 @@ public class BoardDAO {
             pt = conn.prepareStatement(selectSQL);
             rs = pt.executeQuery();
             while (rs.next()) {
+                String peoplenum = rs.getInt("nowPeopleNum") +"/"+ rs.getString("peopleNum");
+
                 BoardDTO boardDTO = new BoardDTO();
                 boardDTO.setTitle(rs.getString("title"));
                 boardDTO.setRegion(rs.getString("region"));
                 boardDTO.setCategory(rs.getString("category"));
                 boardDTO.setNickName(rs.getString("nickName"));
-                boardDTO.setPeopleNum(rs.getString("peopleNum"));
+                boardDTO.setPeopleNum(peoplenum);
                 boardDTO.setContent(rs.getString("content"));
 
                 list.add(boardDTO);
@@ -81,12 +83,14 @@ public class BoardDAO {
             pt.setString(1, userDTO.getNickName());
             rs = pt.executeQuery();
             while (rs.next()) {
+                String peoplenum = rs.getInt("nowPeopleNum") +"/"+ rs.getString("peopleNum");
+
                 BoardDTO boardDTO = new BoardDTO();
                 boardDTO.setTitle(rs.getString("title"));
                 boardDTO.setRegion(rs.getString("region"));
                 boardDTO.setCategory(rs.getString("category"));
                 boardDTO.setNickName(rs.getString("nickName"));
-                boardDTO.setPeopleNum(rs.getString("peopleNum"));
+                boardDTO.setPeopleNum(peoplenum);
                 boardDTO.setContent(rs.getString("content"));
 
                 list.add(boardDTO);
@@ -111,6 +115,48 @@ public class BoardDAO {
 
         return data;
     }
+    public String[][] printMyHistoryBoard(UserDTO userDTO) {
+        // 역순으로 리스트에 담기
+        List<BoardDTO> list = new ArrayList<>();
+        conn = DBConnector.getConnection();
+        String selectSQL = "SELECT * FROM board WHERE nickName = ? ORDER BY postingTime DESC;";
+        try {
+            pt = conn.prepareStatement(selectSQL);
+            pt.setString(1, userDTO.getNickName());
+            rs = pt.executeQuery();
+            while (rs.next()) {
+                String peoplenum = rs.getInt("nowPeopleNum") +"/"+ rs.getString("peopleNum");
+
+                BoardDTO boardDTO = new BoardDTO();
+                boardDTO.setTitle(rs.getString("title"));
+                boardDTO.setRegion(rs.getString("region"));
+                boardDTO.setCategory(rs.getString("category"));
+                boardDTO.setNickName(rs.getString("nickName"));
+                boardDTO.setPeopleNum(peoplenum);
+                boardDTO.setContent(rs.getString("content"));
+
+                list.add(boardDTO);
+            }
+            System.out.println("내 글 데이터 ArrayList에 저장 완료.");
+
+            rs.close();
+            pt.close();
+            conn.close();
+        } catch (SQLException e) {
+            System.out.println("내 글 ArrayList 저장 중 오류 발생.");
+        }
+
+        String[][] data = new String[list.size()][];    // ArrayList에 저장한 데이터들 2차원 배열로 변환해주기.
+
+        for (int i = 0; i < list.size(); i++) {
+            BoardDTO boardDTO = list.get(i);
+            data[i] = new String[]{boardDTO.getRegion(), boardDTO.getCategory(), boardDTO.getTitle(), boardDTO.getNickName(), boardDTO.getPeopleNum()};
+        }
+
+        System.out.println("내가 참여한 공구 내역 출력 완료.");
+
+        return data;
+    }
 
     public BoardDTO readMorePost(int selectRow) {   // 게시글 자세히 보기
         selectRow++;
@@ -123,12 +169,14 @@ public class BoardDAO {
             pt.setInt(1, selectRow);
             rs = pt.executeQuery();
             if (rs.next()) {
+                String peoplenum = rs.getInt("nowPeopleNum") +"/"+ rs.getString("peopleNum");
+
                 boardDTO.setBoardId(rs.getInt("boardID"));
                 boardDTO.setTitle(rs.getString("title"));
                 boardDTO.setRegion(rs.getString("region"));
                 boardDTO.setCategory(rs.getString("category"));
                 boardDTO.setNickName(rs.getString("nickName"));
-                boardDTO.setPeopleNum(rs.getString("peopleNum"));
+                boardDTO.setPeopleNum(peoplenum);
                 boardDTO.setContent(rs.getString("content"));
                 boardDTO.setView(rs.getInt("view") + 1);
             }
@@ -187,7 +235,7 @@ public class BoardDAO {
 
     public void posting(BoardDTO boardDTO) {
         conn = DBConnector.getConnection();
-        String insertSQL = "INSERT INTO board(title, region, category, peopleNum, content, nickName, view) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String insertSQL = "INSERT INTO board(title, region, category, peopleNum, content, nickName, view, nowPeopleNum) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         try {
             pt = conn.prepareStatement(insertSQL);
             pt.setString(1, boardDTO.getTitle());
@@ -197,6 +245,7 @@ public class BoardDAO {
             pt.setString(5, boardDTO.getContent());
             pt.setString(6, boardDTO.getNickName());
             pt.setInt(7, 0);
+            pt.setInt(8, 1);
 
             if (!pt.execute()) {
                 System.out.println("게시 성공.");
