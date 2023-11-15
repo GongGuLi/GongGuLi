@@ -23,7 +23,7 @@ public class BoardDAO {
         List<BoardDTO> list = new ArrayList<>();
         conn = DBConnector.getConnection();
         try {
-            String selectSQL = "";
+            String selectSQL;
             if (region.equals(" --") && !category.equals(" --")) {
                 selectSQL = "SELECT * FROM board WHERE category = ? ORDER BY postingTime DESC;";
                 pt.setString(1, category);
@@ -71,7 +71,6 @@ public class BoardDAO {
 
         return data;
     }
-
     // 내가 쓴 게시글
     public String[][] printMyBoard(UserDTO userDTO) {
         // 역순으로 리스트에 담기
@@ -157,7 +156,6 @@ public class BoardDAO {
 
         return data;
     }
-
     public BoardDTO readMorePost(int selectRow) {   // 게시글 자세히 보기
         selectRow++;
         BoardDTO boardDTO = new BoardDTO();
@@ -213,12 +211,14 @@ public class BoardDAO {
             pt.setInt(1, selectRow);
             rs = pt.executeQuery();
             if (rs.next()) {
+                String peoplenum = rs.getInt("nowPeopleNum") +"/"+ rs.getString("peopleNum");
+
                 boardDTO.setBoardId(rs.getInt("boardID"));
                 boardDTO.setTitle(rs.getString("title"));
                 boardDTO.setRegion(rs.getString("region"));
                 boardDTO.setCategory(rs.getString("category"));
                 boardDTO.setNickName(rs.getString("nickName"));
-                boardDTO.setPeopleNum(rs.getString("peopleNum"));
+                boardDTO.setPeopleNum(peoplenum);
                 boardDTO.setContent(rs.getString("content"));
                 boardDTO.setView(rs.getInt("view") + 1);
             }
@@ -232,7 +232,6 @@ public class BoardDAO {
         }
         return boardDTO;
     }
-
     public void posting(BoardDTO boardDTO) {
         conn = DBConnector.getConnection();
         String insertSQL = "INSERT INTO board(title, region, category, peopleNum, content, nickName, view, nowPeopleNum) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";

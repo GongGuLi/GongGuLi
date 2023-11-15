@@ -155,9 +155,7 @@ public class MainPage extends JFrame{
             public void mouseClicked(MouseEvent e) {
                 if(e.getClickCount() == 2) {
                     int selectRow = postTable.getSelectedRow();
-                    int selectColumn = postTable.getSelectedColumn();
                     System.out.println(selectRow);
-                    System.out.println(selectColumn);
                     BoardDTO boardDTO = boardDAO.readMorePost(selectRow);
                     readMorePost(postTable, boardDTO);
                 }

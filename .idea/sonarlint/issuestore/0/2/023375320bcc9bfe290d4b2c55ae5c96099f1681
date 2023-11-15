@@ -1,76 +1,72 @@
 
 R
-java:S3740Î"/Provide the parametrized type for this generic.(¢ææÕıÿÿÿÿ8¡ÀËƒ½1
+java:S3740Ï"/Provide the parametrized type for this generic.(¢ææÕıÿÿÿÿ8µáÂˆ½1
 R
-java:S3740Î"/Provide the parametrized type for this generic.(¢ææÕıÿÿÿÿ8¢ÀËƒ½1
+java:S3740Ï"/Provide the parametrized type for this generic.(¢ææÕıÿÿÿÿ8µáÂˆ½1
 R
-java:S3740È"/Provide the parametrized type for this generic.(ÿÀŠúÿÿÿÿ8¢ÀËƒ½1
+java:S3740É"/Provide the parametrized type for this generic.(ÿÀŠúÿÿÿÿ8¶áÂˆ½1
 R
-java:S3740È"/Provide the parametrized type for this generic.(ÿÀŠúÿÿÿÿ8¢ÀËƒ½1
+java:S3740É"/Provide the parametrized type for this generic.(ÿÀŠúÿÿÿÿ8¶áÂˆ½1
 L
-java:S3740Ğ"/Provide the parametrized type for this generic.(€¡§8¢ÀËƒ½1
+java:S3740Ñ"/Provide the parametrized type for this generic.(€¡§8¶áÂˆ½1
 L
-java:S3740Ğ"/Provide the parametrized type for this generic.(€¡§8¢ÀËƒ½1
-h
-java:S1192³"JDefine a constant instead of duplicating this literal " ì§€ì—­: " 3 times.(’‰ëˆ8£ÀËƒ½1
-r
-java:S1192¹"ODefine a constant instead of duplicating this literal "ì¹´í…Œê³ ë¦¬: " 3 times.(å•ŞØûÿÿÿÿ8£ÀËƒ½1
-n	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»å›¨8¤ÀËƒ½1
+java:S3740Ñ"/Provide the parametrized type for this generic.(€¡§8¶áÂˆ½1
+m
+java:S1192´"JDefine a constant instead of duplicating this literal " ì§€ì—­: " 3 times.(Æ”ä¹ÿÿÿÿÿ8¸áÂˆ½1
+m
+java:S1192º"ODefine a constant instead of duplicating this literal "ì¹´í…Œê³ ë¦¬: " 3 times.(Ÿ°ï½8¸áÂˆ½1
+n	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»å›¨8¹áÂˆ½1
 E
-java:S16047"(Make this anonymous inner class a lambda(õ‹¾È8¤ÀËƒ½1
+java:S16048"(Make this anonymous inner class a lambda(õ‹¾È8¹áÂˆ½1
 J
-java:S1604I"(Make this anonymous inner class a lambda(Ü€Óµøÿÿÿÿ8¥ÀËƒ½1
+java:S1604J"(Make this anonymous inner class a lambda(Ü€Óµøÿÿÿÿ8¹áÂˆ½1
 J
-java:S1604W"(Make this anonymous inner class a lambda(ıµ¹”üÿÿÿÿ8¥ÀËƒ½1
+java:S1604X"(Make this anonymous inner class a lambda(ıµ¹”üÿÿÿÿ8¹áÂˆ½1
 E
-java:S1604l"(Make this anonymous inner class a lambda(¡èÃâ8¥ÀËƒ½1
+java:S1604m"(Make this anonymous inner class a lambda(¡èÃâ8¹áÂˆ½1
 K
-java:S1604«"(Make this anonymous inner class a lambda(ú‰ò§úÿÿÿÿ8¥ÀËƒ½1
+java:S1604¬"(Make this anonymous inner class a lambda(ú‰ò§úÿÿÿÿ8¹áÂˆ½1
 F
-java:S1604å"(Make this anonymous inner class a lambda(‡Ö8¥ÀËƒ½1
+java:S1604æ"(Make this anonymous inner class a lambda(‡Ö8ºáÂˆ½1
 F
-java:S1604Ì"(Make this anonymous inner class a lambda(¥İ„8¥ÀËƒ½1
+java:S1604Í"(Make this anonymous inner class a lambda(¥İ„8ºáÂˆ½1
 F
-java:S1604Ü"(Make this anonymous inner class a lambda(òØè8¥ÀËƒ½1
+java:S1604İ"(Make this anonymous inner class a lambda(òØè8ºáÂˆ½1
 F
-java:S1604ç"(Make this anonymous inner class a lambda(ğìÜÜ8¥ÀËƒ½1
+java:S1604è"(Make this anonymous inner class a lambda(ğìÜÜ8ºáÂˆ½1
 F
-java:S1604²"(Make this anonymous inner class a lambda(™Øì8¥ÀËƒ½1
+java:S1604³"(Make this anonymous inner class a lambda(™Øì8ºáÂˆ½1
 K
-java:S1948")Make "userDTO" transient or serializable.(‰ˆ«§şÿÿÿÿ8×ÀËƒ½1
+java:S1948")Make "userDTO" transient or serializable.(‰ˆ«§şÿÿÿÿ8ôáÂˆ½1
 K
-java:S1948")Make "userDAO" transient or serializable.(¿¥½°ıÿÿÿÿ8×ÀËƒ½1
+java:S1948")Make "userDAO" transient or serializable.(¿¥½°ıÿÿÿÿ8ôáÂˆ½1
 L
-java:S1948"*Make "boardDAO" transient or serializable.(ˆ¦èµúÿÿÿÿ8ÌÍƒ½1
+java:S1948"*Make "boardDAO" transient or serializable.(ˆ¦èµúÿÿÿÿ8ôáÂˆ½1
 k
-java:S3252&"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8İÀËƒ½1
-E	java:S108p")Either remove or fill this block of code.(Û÷î–8äÀËƒ½1
+java:S3252'"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ûáÂˆ½1
+E	java:S108q")Either remove or fill this block of code.(Û÷î–8‚âÂˆ½1
 
-java:S3252¯"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(ÀëÏûÿÿÿÿ8êÀËƒ½1
+java:S3252°"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(ÀëÏûÿÿÿÿ8ˆâÂˆ½1
 z
-java:S3252Õ"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(„ğ¹8íÀËƒ½1
+java:S3252Ö"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(„ğ¹8‹âÂˆ½1
 o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(‚ÃÚ"8ñÀËƒ½1
+java:S3776‚"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(‚ÃÚ"8âÂˆ½1
 ^
-java:S1854ê";Remove this useless assignment to local variable "userPWC".(» ºöşÿÿÿÿ8úÀËƒ½1
+java:S1854ë";Remove this useless assignment to local variable "userPWC".(» ºöşÿÿÿÿ8˜âÂˆ½1
 O
-java:S1481ê",Remove this unused "userPWC" local variable.(» ºöşÿÿÿÿ8úÀËƒ½1
+java:S1481ë",Remove this unused "userPWC" local variable.(» ºöşÿÿÿÿ8˜âÂˆ½1
 L
-java:S1874ò"/Remove this use of "getText"; it is deprecated.(ˆàİ8ûÀËƒ½1
+java:S1874ó"/Remove this use of "getText"; it is deprecated.(ˆàİ8™âÂˆ½1
 L
-java:S1874ò"/Remove this use of "getText"; it is deprecated.(ˆàİ8ûÀËƒ½1
+java:S1874ó"/Remove this use of "getText"; it is deprecated.(ˆàİ8™âÂˆ½1
 M
-java:S1874ó"/Remove this use of "getText"; it is deprecated.(–Êñ…8ûÀËƒ½1
+java:S1874ô"/Remove this use of "getText"; it is deprecated.(–Êñ…8™âÂˆ½1
 M
-java:S1874ó"/Remove this use of "getText"; it is deprecated.(–Êñ…8ûÀËƒ½1
-Q
-java:S1172Ÿ"3Remove this unused method parameter "selectColumn".(„‚¼8€ÁËƒ½1
-V
-java:S1172ó"3Remove this unused method parameter "selectColumn".(°’’Şûÿÿÿÿ8†ÁËƒ½1
+java:S1874ô"/Remove this use of "getText"; it is deprecated.(–Êñ…8™âÂˆ½1
 
-java:S3252ß"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(·ÀÃ™ùÿÿÿÿ8ÁËƒ½1
+java:S3252à"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(·ÀÃ™ùÿÿÿÿ8«âÂˆ½1
 }
-java:S3252ß"ZUse static access with "javax.swing.ScrollPaneConstants" for "HORIZONTAL_SCROLLBAR_NEVER".(·ÀÃ™ùÿÿÿÿ8ÁËƒ½1
+java:S3252à"ZUse static access with "javax.swing.ScrollPaneConstants" for "HORIZONTAL_SCROLLBAR_NEVER".(·ÀÃ™ùÿÿÿÿ8«âÂˆ½1
 _
-java:S1126œ"AReplace this if-then-else statement by a single return statement.(¯‘Í8“ÁËƒ½1
-^	java:S125¶"<This block of commented-out lines of code should be removed.(İÏúÿÿÿÿ8•ÁËƒ½1
+java:S1126"AReplace this if-then-else statement by a single return statement.(¯‘Í8±âÂˆ½1
+^	java:S125·"<This block of commented-out lines of code should be removed.(İÏúÿÿÿÿ8³âÂˆ½1
