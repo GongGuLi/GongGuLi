@@ -1,0 +1,28 @@
+
+\
+java:S1192"FDefine a constant instead of duplicating this literal "SUITE" 6 times.(íŞ÷§
+E
+java:S1197"*Move the array designators [] to the type.(ÍØ¬Âşÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(úó®øÿÿÿÿ
+@
+java:S1197"*Move the array designators [] to the type.(”·ã
+G
+java:S1197",Move the array designators [][] to the type.(“ßğ½ÿÿÿÿÿ
+@
+java:S1197"*Move the array designators [] to the type.(ÄÁĞ¦
+G
+java:S1197",Move the array designators [][] to the type.(´—”Ûúÿÿÿÿ
+@
+java:S1197!"*Move the array designators [] to the type.(ŸáİÅ
+@
+java:S1197""*Move the array designators [] to the type.(à Ÿ¾
+E
+java:S1197$"*Move the array designators [] to the type.(ÿ÷À¥ùÿÿÿÿ
+@
+java:S1197%"*Move the array designators [] to the type.(Éµ´ê
+E
+java:S1197&"*Move the array designators [] to the type.(¡ñ·ùÿÿÿÿ
+h	java:S100@"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¡Û…úÿÿÿÿ
+b
+java:S3252C"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(§ıÏÁ

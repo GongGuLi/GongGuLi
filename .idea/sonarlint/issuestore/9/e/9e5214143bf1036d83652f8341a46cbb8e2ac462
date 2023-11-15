@@ -1,0 +1,11 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ö“ŒÑúÿÿÿÿ8æîÙä¼1
+r	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Ëå ùÿÿÿÿ8èîÙä¼1
+k	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®£}8èîÙä¼1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µùë¦8éîÙä¼1
+j	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å—ğÍ8ôîÙä¼1
+o	java:S100g"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î‹İåşÿÿÿÿ8ƒïÙä¼1
+]
+java:S1854i"BRemove this useless assignment to local variable "FindUserIdInfo".(®£}8„ïÙä¼1
+N
+java:S1481i"3Remove this unused "FindUserIdInfo" local variable.(®£}8„ïÙä¼1

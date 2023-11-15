@@ -1,0 +1,69 @@
+
+D
+java:S3740N"/Provide the parametrized type for this generic.(—´Ô
+D
+java:S3740N"/Provide the parametrized type for this generic.(—´Ô
+E
+java:S3740V"/Provide the parametrized type for this generic.(œÄŞú
+E
+java:S3740V"/Provide the parametrized type for this generic.(œÄŞú
+K
+java:S3740„"/Provide the parametrized type for this generic.(ˆğĞøûÿÿÿÿ
+K
+java:S3740„"/Provide the parametrized type for this generic.(ˆğĞøûÿÿÿÿ
+R
+java:S3740¾"/Provide the parametrized type for this generic.(ÿÀŠúÿÿÿÿ8¸çÅÅ»1
+R
+java:S3740¾"/Provide the parametrized type for this generic.(ÿÀŠúÿÿÿÿ8¹çÅÅ»1
+L
+java:S3740Æ"/Provide the parametrized type for this generic.(€¡§8ºçÅÅ»1
+L
+java:S3740Æ"/Provide the parametrized type for this generic.(€¡§8»çÅÅ»1
+j
+java:S1192?"NDefine a constant instead of duplicating this literal "ì±„íŒ… ëª©ë¡" 3 times.(ÒÊãD8¾çÅÅ»1
+C
+java:S16046"(Make this anonymous inner class a lambda(ÔÔ‘çüÿÿÿÿ
+>
+java:S1604C"(Make this anonymous inner class a lambda(Šğ²É
+>
+java:S1604Z"(Make this anonymous inner class a lambda(¡’Ø±
+C
+java:S1604b"(Make this anonymous inner class a lambda(ÒÒÿÿÿÿÿ
+E
+java:S1604‰"(Make this anonymous inner class a lambda(ò¢ƒF8ÇçÅÅ»1
+F
+java:S1604¯"(Make this anonymous inner class a lambda(æï‚â8ÈçÅÅ»1
+K
+java:S1604İ"(Make this anonymous inner class a lambda(éÙİ£úÿÿÿÿ8ÉçÅÅ»1
+F
+java:S1604³"(Make this anonymous inner class a lambda(™Øì8ÉçÅÅ»1
+D
+java:S1948")Make "userDTO" transient or serializable.(‰ˆ«§şÿÿÿÿ
+E
+java:S1948"*Make "boardDAO" transient or serializable.(ˆ¦èµúÿÿÿÿ
+d
+java:S3252%"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ
+M
+java:S1197ƒ"*Move the array designators [] to the type.(‰—­‘ÿÿÿÿÿ8°èÅÅ»1
+^
+java:S1117§"BRename "listScrollPane" which hides the field declared at line 20.(Ò˜ôÀúÿÿÿÿ
+x
+java:S3252¨"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(ş¢”Šúÿÿÿÿ
+F
+java:S1197Õ"*Move the array designators [] to the type.(‚òó³ıÿÿÿÿ
+H
+java:S1197Ö",Move the array designators [][] to the type.(ÊÕññşÿÿÿÿ
+x
+java:S3252Ú"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(ş¢”Šúÿÿÿÿ
+?
+java:S1172ä"(Remove this unused method parameter "t".(˜Êß®
+x
+java:S3252Õ"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(·ÀÃ™ùÿÿÿÿ
+v
+java:S3252Õ"ZUse static access with "javax.swing.ScrollPaneConstants" for "HORIZONTAL_SCROLLBAR_NEVER".(·ÀÃ™ùÿÿÿÿ
+V
+java:S1117á":Rename "region" which hides the field declared at line 16.(«öÓÑÿÿÿÿÿ
+S
+java:S1117â"<Rename "category" which hides the field declared at line 17.(°ü±¼
+X
+java:S1126"AReplace this if-then-else statement by a single return statement.(¯‘Í

@@ -1,0 +1,8 @@
+
+f	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çê§á
+C
+java:S1604O"(Make this anonymous inner class a lambda(ŒûöÍþÿÿÿÿ
+D
+java:S1948")Make "userDAO" transient or serializable.(¿¥½°ýÿÿÿÿ
+b
+java:S3252"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(¬ëëÆ
