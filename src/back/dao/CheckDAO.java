@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class CheckDAO {
+
     Connection conn = null;
     PreparedStatement pt = null;
     ResultSet rs = null;
